@@ -4,7 +4,7 @@ let projList = [
       "imgSrc" : "imgs/proj4.png",
       "bgcolor" : "white",
       "year" : "2020",
-      "desc": "a guide on accessibility and wayfinding on NYUAD campus and a collection of student work",
+      "desc": "a collection of student works about accessibility&wayfinding on our campus",
     },
     {
       "title" : "NYUAD Design Archive",

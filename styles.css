@@ -1,5 +1,7 @@
 body{
   font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: black;
 }
 
 .grid-image{
@@ -29,8 +31,10 @@ body{
 
 #hello{
   background-color: black;
-  color:white;
+  color: white;
   text-align: center;
-  padding: 5vh;
-  font-size: 15vh;
+  padding: 0vh;
+  font-size: 20vh;
+  font-family: 'Helvetica';
+  font-weight: 400;
 }

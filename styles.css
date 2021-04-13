@@ -20,6 +20,16 @@ body{
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .contentGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-image{
+    width: 75vw;
+  }
+}
+
+
 .contentItem {
   display: flex;
   flex-direction: column;

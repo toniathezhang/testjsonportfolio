@@ -30,11 +30,16 @@ body{
 }
 
 #hello{
+  margin-top: 6vh;
   background-color: black;
   color: white;
   text-align: center;
-  padding: 0vh;
   font-size: 20vh;
   font-family: 'Helvetica';
   font-weight: 400;
+}
+
+hr {
+  margin-top: -7vh;
+  border: 5px solid white;
 }

@@ -1,3 +1,13 @@
+var colors = ["black", "blue", "orangered"];
+
+var mainElement = document.getElementById("body");
+
+var randomColorIndex = Math.floor( Math.random() * colors.length );
+
+mainElement.style.backgroundColor = colors[randomColorIndex];
+
+
+
 let projList = [
     {
       "title" : "Finding Our Way at NYUAD",
@@ -43,24 +53,26 @@ for(let i=0; i < projList.length; i++){
     let year = projList[i]["year"]
     let bgColor = projList[i]['bgColor']
     
-    let centerTitle = document.createElement("CENTER");
+    let centerTitle = document.createElement("span");
     let titleNode = document.createElement("H3");
     let titleText = document.createTextNode(title);
     titleNode.append(titleText);
-    titleNode.style.fontSize = "5vh";
+    titleNode.style.fontSize = "4vh";
     centerTitle.append(titleNode);
 
-    let centerDesc = document.createElement("CENTER");
+    let centerDesc = document.createElement("span");
     let descNode = document.createElement('P');
     let descText = document.createTextNode(desc);
     descNode.append(descText);
-    descNode.style.fontSize = "4vh";
+    descNode.style.fontSize = "3vh";
+    descNode.style.paddingBottom = "2vh";
     centerDesc.append(descNode);
 
     let centerImg = document.createElement("CENTER");
     let imgNode = document.createElement('IMG');
     imgNode.src = imgSrc;
     imgNode.classList.add("grid-image")
+    imgNode.style.paddingLeft="0vw";
     centerImg.append(imgNode);
 
     let centerYear = document.createElement("CENTER");

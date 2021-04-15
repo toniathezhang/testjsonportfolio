@@ -1,3 +1,4 @@
+
 var colors = ["black", "blue", "orangered"];
 
 var mainElement = document.getElementById("body");
@@ -46,6 +47,7 @@ let projList = [
 let contentDiv = document.getElementById('grid')
 
 for(let i=0; i < projList.length; i++){
+  // retrieving the json objects
     let cellDiv = document.createElement("DIV");
     let title =  projList[i]["title"] 
     let desc = projList[i]["desc"]
@@ -53,12 +55,16 @@ for(let i=0; i < projList.length; i++){
     let year = projList[i]["year"]
     let bgColor = projList[i]['bgColor']
     
+    // title 
     let centerTitle = document.createElement("span");
     let titleNode = document.createElement("H3");
     let titleText = document.createTextNode(title);
     titleNode.append(titleText);
     titleNode.style.fontSize = "4vh";
     centerTitle.append(titleNode);
+
+
+    // subtitle
 
     let centerDesc = document.createElement("span");
     let descNode = document.createElement('P');
@@ -68,12 +74,17 @@ for(let i=0; i < projList.length; i++){
     descNode.style.paddingBottom = "2vh";
     centerDesc.append(descNode);
 
+
+    // img
     let centerImg = document.createElement("CENTER");
     let imgNode = document.createElement('IMG');
     imgNode.src = imgSrc;
     imgNode.classList.add("grid-image")
     imgNode.style.paddingLeft="0vw";
     centerImg.append(imgNode);
+
+
+    // year
 
     let centerYear = document.createElement("CENTER");
     let yearNode = document.createElement('p');

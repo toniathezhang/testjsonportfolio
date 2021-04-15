@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="body">
-    <h1 id="hello">Recent Work</h1>
+    <h1 id="hello" data-aos="fade-right">Recent Work</h1>
     <hr>
-    <div class="contentGrid" id="grid">
+    <div class="contentGrid" id="grid" data-aos="fade-right">
 
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
